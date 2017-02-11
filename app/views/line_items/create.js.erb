@@ -1,0 +1,9 @@
+if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); }
+// the above line is added according to page no 161
+
+
+// this file is created to write next line first
+$('#cart').html("<%=j render(@cart) %>");
+
+// the following code is added due to instruction given on page no 160
+$('#current_item').css({'background-color':'#88ff88'}).animate({'background-color':'#114411'}, 1000);
