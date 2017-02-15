@@ -1,9 +1,11 @@
+$('#notice').hide();
+
 if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); }
 // the above line is added according to page no 161
 
 
 // this file is created to write next line first
 $('#cart').html("<%=j render(@cart) %>");
-alert("111111111111111");
+
 // the following code is added due to instruction given on page no 160
-$('#current_item').css({'background-color':'#88ff88'}).animate({'background-color':'#114411'}, 1000);
+$('#current_item').css({'background-color':'red'}).animate({'background-color':'green'}, 1000);

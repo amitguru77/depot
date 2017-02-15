@@ -1,16 +1,10 @@
-
-
-<!-- the following code segment(line 5 to 9) is added due to instruction given on 159 -->
-
 <% if line_item == @current_item %>
  <tr id="current_item">
  <% else %>
  <tr>
 <% end %>
 
-<!-- this file is created by instruction given on page no 147 -->
 
-<!-- <tr> -->
 <td><%= line_item.quantity %>&times;</td>
 <td><%= line_item.product.title %></td>
 <td class="item_price"><%= number_to_currency(line_item.total_price) %></td>

@@ -1,7 +1,3 @@
-<!-- <h1>Store#index</h1>
-<p>Find me in app/views/store/index.html.erb</p>
- -->
-
 <p id="notice"><%= notice %></p>
 <h1>Your Pragmatic Catalog</h1>
 <% cache @products do %>
@@ -13,10 +9,9 @@
 <%= sanitize(product.description) %>
 <div class="price_line">
 
-<!-- <span class="price"><%= product.price %></span> -->
+
 <span class="price"><%= number_to_currency(product.price) %></span>
-<!-- <%= button_to 'Add to Cart', line_items_path(product_id: product) %> -->
-<!-- the line no 18 is commented due to line no 21 according to page no 154 -->
+
 
 <%= button_to 'Add to Cart', line_items_path(product_id: product), remote: true %>
 </div>
