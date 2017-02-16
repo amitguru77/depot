@@ -1,6 +1,6 @@
 class StoreController < ApplicationController
 
-	# skip_before_action :authorize
+	skip_before_action :authorize
 
 	# folloing two lines are added according to page no 149
 	 include CurrentCart

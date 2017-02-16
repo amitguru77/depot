@@ -21,7 +21,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
 
     end
 
-    assert_redirected_to user_url(User.last)
+    assert_redirected_to users_url
 
   end
 
